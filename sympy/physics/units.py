@@ -77,7 +77,6 @@ from __future__ import print_function, division
 
 from sympy import Rational, pi
 from sympy.core import AtomicExpr
-from sympy.physics.constants import c, avogadro_number, dHg0
 
 class Unit(AtomicExpr):
     """
@@ -187,6 +186,8 @@ acceleration = m/s**2
 density = kg/m**3
 optical_power = dioptre = D = 1/m
 illuminance = lux = lx = sr*cd/m**2
+
+from sympy.physics.constants import c, avogadro_number, dHg0
 avogadro = avogadro_constant = avogadro_number / mol
 gee = gees = Rational('9.80665') * m/s**2
 
